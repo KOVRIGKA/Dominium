@@ -1,0 +1,109 @@
+.banner{
+    background: linear-gradient(
+          rgba(0, 0, 0, 0.25), 
+          rgba(0, 0, 0, 0.25)
+        ), url(../img/kv.jpg) no-repeat no-repeat center center;
+    background-size: cover;
+    margin-bottom: 0;
+}
+.banner__row{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.banner__desc{
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    filter: contrast(1.45);
+}
+
+.banner-desc__title{
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.banner-desc__list{
+    font-size: 36px;
+}
+
+.banner__order{
+    display: flex;
+    flex-direction: column;
+    text-align: center;    
+    background: #fff;
+    padding: 0 20px;
+    max-width: 400px;
+}
+
+.banner-order__title{
+    color: #0F3161;
+    font-size: 25px;  
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    line-height: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.form__block{
+    display: flex;
+}
+
+.form__input{
+    padding: 6px 15px;
+    border-radius: 3px;
+    border: 1px solid;
+    border-color: lightgrey;
+    flex: 1;
+    height: 44px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.form__request{
+    display: flex;
+}
+
+.btn__request{
+    padding: 6px 15px;
+    border-radius: 3px;
+    border: 1px solid;
+    border-color: #0F3161;
+    background-color: #0F3161;
+    width: 346px;
+    height: 44px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    text-align: center;
+    padding-left: 90px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.btn__request:hover{
+    background-color: #96db7c;
+    border-color: #96db7c;
+    transition: 0.5s;
+
+}
+
+.btn-request__info{
+    display: flex;
+    align-items: center;
+}
+
+.btn__plane{
+    height: 20px;
+    width: 20px;
+    margin-left: 15px;
+}
+
+.banner-order__desc{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 40px;
+}

@@ -1,0 +1,124 @@
+.requests__title{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+    color: #000;
+    filter: contrast(19.77);    
+    margin: 0 0 20px;
+    margin-top: 40px;
+}
+
+.requests__subtitle{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #000;
+    filter: contrast(19.77);
+    margin: 0 0 40px;
+}
+
+.request__title{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #0f3161;
+    filter: contrast(12);
+    margin: 0 0 30px;
+}
+
+.container__request{
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-request__block{
+    margin-bottom: 20px;
+}
+
+.form-request__input{
+    width: 330px;
+    padding: 6px 15px;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: lightgrey;
+    height: 50px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.btn__request-send{
+    width: 100%;
+    height: 50px;
+    background-color: #95C566;
+    border-color: #95c566;
+    padding: 11px 15px;
+    border-radius: 3px;
+    border: #95c566 1px solid;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    margin-bottom: 50px;
+    transition: 0.5s;
+
+}
+
+.btn__request-send:hover{
+    background-color: #96db7c;
+    transition: 0.5s;
+
+}
+
+.request__addition{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #000;
+    filter: contrast(19.77);
+    margin: 0 0 30px;
+}
+
+
+.request-addition__title{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #000;
+    filter: contrast(19.77);
+    margin: 0 0 10px;
+}
+
+.request__number{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: normal;
+    color: #8caf68;
+    filter: contrast(1.79);
+    margin: 0 0 30px;
+}
+
+.request__phone{
+    margin-bottom: 50px;
+}

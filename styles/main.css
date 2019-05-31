@@ -1,0 +1,31 @@
+html, body{
+    margin: 0;
+    height: 100%;
+}    
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+li{    
+    list-style-type: none;
+}
+
+ul{
+    padding: 0;
+}
+
+.wrapper{
+    background-color: #f8f8f8;
+}
+
+
+hr{
+    color: #949090;
+    size: 2px;
+    width: 1000px;
+    opacity: 0.5;
+}

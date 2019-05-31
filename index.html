@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/banner.css">
+    <link rel="stylesheet" href="styles/features.css">
+    <link rel="stylesheet" href="styles/value.css">
+    <link rel="stylesheet" href="styles/reasons.css">
+    <link rel="stylesheet" href="styles/works.css">
+    <link rel="stylesheet" href="styles/answers.css">
+    <link rel="stylesheet" href="styles/request.css">
+    <link rel="stylesheet" href="styles/contacts.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,600&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: Bebas; /* Имя шрифта */
+            src: url(fonts/bebas.ttf); /* Путь к файлу со шрифтом */
+        }
+        @font-face {
+            font-family: Menlo; /* Имя шрифта */
+            src: url(fonts/menlo.ttf); /* Путь к файлу со шрифтом */
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row header__row">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="header__logo">
+                        <a href="" class="logo">
+                            <div class="logo__content">
+                                <img class="logo__img" src="img/dom.png" alt="">
+                                <div class="logo__dom">
+                                    Доминиум
+                                </div>
+                                <div class="logo__stick">
+                                    |
+                                </div>
+                                <div class="logo__urgent">
+                                    Срочный выкуп
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="header__navigation">
+                        <ul class="navigation__list">
+                            <li class="navigation__item">
+                                <a href="" class="navigation__link">
+                                    <div class="navigation-link__title">
+                                        <div class="navigation__title">О нас</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="" class="navigation__link">
+                                    <div class="navigation-link__title">
+                                        <div class="navigation__title">Оценка</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="" class="navigation__link">
+                                    <div class="navigation-link__title">
+                                        <div class="navigation__title">Как мы работаем</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="" class="navigation__link">
+                                    <div class="navigation-link__title">
+                                        <div class="navigation__title">Контакты</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="header__contacts">
+                        <div class="header__address">
+                            <img src="img/address.png" alt="" class="address__logo">
+                            г. Москва, ул. Вавилова, д.69/75
+                        </div>
+                        <div class="header__phone">
+                            <img src="img/phone.png" alt="" class="phone__logo">
+                            <a href="+79251597137" class="header__number">+7 (925) 159-71-37</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <section class="banner">
+            <div class="container">
+                <div class="row banner__row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 banner__desc">
+                        <div class="banner-desc__title">
+                            Срочный выкуп жилья в <br> Москве и Московской области
+                        </div>
+                        <ul class="banner-desc__list">
+                            <li class="banner-desc__item">Выкупаем дорого за один день</li>
+                            <li class="banner-desc__item">Выкупаем за собственные средства</li>
+                            <li class="banner-desc__item">Выкупаем с долгами</li>
+                            <li class="banner-desc__item">Аванс в день обращения</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 banner__order">
+                        <div class="banner-order__title">
+                            Заказать бесплатную <br> оценку квартиры
+                        </div>
+                        <form action="" class="form">
+                            <label for="" class="form__block">
+                                <input type="text" class="form__input" name="name" placeholder="Ваше Имя">
+                            </label>
+                            <label for="" class="form__block">
+                                <input type="tel" id="phone" class="form__input" name="phone" placeholder="Ваш телефон">
+                            </label>
+                            <div class="form__request">
+                                <button class="btn__request" id="">
+                                    <div class="btn-request__info"> 
+                                        Оставить заявку
+                                        <img src="img/plane.png" alt="" class="btn__plane">
+                                    </div>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="banner-order__desc">
+                            Наш агент свяжется с Вами в течение 5 минут, чтобы оценить Вашу квартиру по телефону!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+        <section class="features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 features__title">
+                        Готовы выдать аванс в день обращения
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 features__subtitle">
+                        Если у Вас сложная ситуация, и срочно нужны средства, то Агенство "Доминиум" готово выдать аванс наличными.
+                    </div>
+                </div>
+                <div class="row features__block">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 feature">
+                        <img src="img/feature-1.png" alt="" class="feature__icon">
+                        <h4 class="feature__title">Срочный Выкуп за 1 день</h4>
+                        <div class="feature__desc">Мы выкупаем за собственные средства, мы не ищем инвесторов, поэтому делаем всё быстро</div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 feature">
+                        <img src="img/feature-2.png" alt="" class="feature__icon">
+                        <h4 class="feature__title">Выкупаем за 90% от рыночной стоимости</h4>
+                        <div class="feature__desc">Сначала нам нужно оценить недвижимость. Для этого Вы позвоните нам или оставите заявку</div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 feature">
+                        <img src="img/feature-3.png" alt="" class="feature__icon">
+                        <h4 class="feature__title">Выкупаем залоговые и ипотечные квартиры</h4>
+                        <div class="feature__desc">У нас отработана технология покупки квартир с обременением. Гтовы рассмотреть разные варианты</div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 feature">
+                        <img src="img/feature-4.png" alt="" class="feature__icon">
+                        <h4 class="feature__title">Помощь в быстрой продаже квартиры</h4>
+                        <div class="feature__desc">Быстрая продажа за 30 дней. Если мы не продаем её за этот период, то выкупаем недвижимость</div>
+                    </div>
+                </div>
+                <div class="row other__features">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 other-feature">Выкупаем квартиры в новостройках</div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 other-feature">Бесплатная оценка за 15 минут</div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 other-feature">Рассмотрим объекты с долгами</div>
+                </div>
+                <div class="row other__features">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 other-feature">Выкупим нежилые помещенеия, а также аппартаменты и офисы</div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 other-feature">Выкуп загородной недвижимости</div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 other-feature">Выкуп участков, домов, коттеджей</div>
+                </div>
+            </div>
+        </section>
+        <hr nonshade>
+        <section class="value">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 value__title">
+                        Получить оценку квартиры онлайн
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 value__subtitle">
+                        Заполните фонрму ниже, и наш агент свяжется с Вами в течение 5 минут , чтобы предоствить оценку стоимости квартиры.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 form__value">
+                        <select class="form-value__input" name="" id="">
+                            <option value="">
+                                Тип жилья
+                            </option>
+                            <option value="">
+                                Вторичное жилье
+                            </option>
+                            <option value="">
+                                Новостройки
+                            </option>
+                            <option value="">
+                                Загородный дом
+                            </option>
+                        </select>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <select class="form-value__input" name="" id="">
+                            <option value="">
+                                Количество комнат
+                            </option>
+                            <option value="">
+                                Свободная планировка
+                            </option>
+                            <option value="">
+                                1
+                            </option>
+                            <option value="">
+                                2
+                            </option>
+                            <option value="">
+                                3
+                            </option>
+                            <option value="">
+                                4
+                            </option>
+                            <option value="">
+                                5
+                            </option>
+                            <option value="">
+                                6
+                            </option>
+                            <option value="">
+                                7+
+                            </option>
+                            <option value="">
+                                Другое
+                            </option>
+                        </select>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <input type="text" class="form-value__input" name="metro" placeholder="Станция метро">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <input type="text" class="form-value__input" name="floor-number" placeholder="Этажность">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <input type="text" class="form-value__input" name="floor" placeholder="Этаж">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <input type="text" class="form-value__input" name="name" placeholder="Ваше Имя">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <input type="text" class="form-value__input" name="mail" placeholder="Ваш e-mail">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <input type="text" class="form-value__input" name="phone" placeholder="Ваш телефон">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mx-auto">
+                        <button class="btn__send" id="">
+                            Отправить
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 value__title">
+                        Или позвоните нам, и мы оценим Вашу квартиру по телефону
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mx-auto value__phone">
+                        <a href="+74951208200" class="value__number">+7 (495) 120-82-00</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr nonshade>
+        <section class="reasons">
+            <div class="container">
+                <div class="row reasons__head">
+                    <div class="reasons-head__block mx-auto">
+                        <h2 class="reasons__title">
+                            9 важных причин, почему клиенты выбирают нас
+                        </h2>
+                        <img class="reasons__warning" src="img/warning.png">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 reason">
+                        <div class="reason__block-for-circle">
+                            <div class="reason__circle">
+                                <div class="reason__number">
+                                    1
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reason__desc">
+                            Выкупаем недвижимость за собственные средства
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 reason">
+                        <div class="reason__block-for-circle">
+                            <div class="reason__circle">
+                                <div class="reason__number">
+                                    2
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reason__desc">
+                            Принятие решения о выкупе недвижимости занимает 1 день
+                        </div>                    
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 reason">
+                        <div class="reason__block-for-circle">
+                            <div class="reason__circle">
+                                <div class="reason__number">
+                                    3
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reason__desc">
+                            Рассмотрение заявки на выкуп недвижимости занимает всего 15 минут
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 reason">
+                        <div class="reason__block-for-circle">
+                            <div class="reason__circle">
+                                <div class="reason__number">
+                                    4
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reason__desc">
+                            Бесплатный выезд эксперта для оценки недвижимости
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 reason">
+                        <div class="reason__block-for-circle">
+                            <div class="reason__circle">
+                                <div class="reason__number">
+                                    5
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reason__desc">
+                            Аренда банковской депозитарной ячейки за наш счет
+                        </div>                    
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 reason">
+                        <div class="reason__block-for-circle">
+                            <div class="reason__circle">
+                                <div class="reason__number">
+                                    6
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reason__desc">
+                            Многолетний опыт высококвалифицированных агентов по недвижимости
+                        </div>
+                    </div>
+                </div>
+                <div class="row reason-row--last">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 reason">
+                        <div class="reason__block-for-circle">
+                            <div class="reason__circle">
+                                <div class="reason__number">
+                                    7
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reason__desc">
+                            Услуги агенства по срочному выкупу для Вас бесплатны
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 reason">
+                        <div class="reason__block-for-circle">
+                            <div class="reason__circle">
+                                <div class="reason__number">
+                                    8
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reason__desc">
+                            Выплата временного займа на время ведения сделки
+                        </div>                    
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 reason">
+                        <div class="reason__block-for-circle">
+                            <div class="reason__circle">
+                                <div class="reason__number">
+                                    9
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reason__desc">
+                            Бесплатная юридическая консультация и сопровождение сделки
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="reasons__phone mx-auto">
+                        <div class="reasons-phone__block">
+                            <img class="reasons-phone__icon" src="img/reasons_phone.png">
+                            <a href="+74992130390" class="reasons-phone__number">+7 (499) 213-03-90</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr nonshade>
+        <section class="works">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 works__title">
+                        Как мы будем с Вами работать?
+                    </div>
+                </div>
+                <div class="row work">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 work__icon-1-1">
+                        <img src="img/work_1-1.png" alt="" class="">
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 work__info">
+                        <h3 class="work__title">Заявка</h3>
+                        <div class="work__desc">
+                            Вы оставляете заявку на сайте или звоните нам.  
+                            Знакомимся. По телефону уточняем все детали по 
+                            Вашей недвижимости. Договариваемся о встрече.
+                        </div>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 work__icon-1-2">
+                        <img src="img/work_1-2.png" alt="" class="">
+                    </div>
+                </div>
+                <div class="row work work--green">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 work__icon-2">
+                        <img src="img/work_2.png" alt="" class="">
+                    </div>
+                    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 work__info">
+                        <h3 class="work__title work__title--center">Выезд</h3>
+                        <div class="work__desc">
+                            Мы выезжаем к Вам для бесплатной оценки недвижимости. 
+                            От нас приезжает эксперт для более точной оценки квартиры, 
+                            комнаты, загородной или коммерческой недвижимости. 
+                            Устанавливает точную  рыночную стоимость Вашего помещения. 
+                            Услуга абсолютно бесплатна.
+                        </div>
+                    </div>
+                </div>
+                <div class="row work">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 work__icon-1-1">
+                        <img src="img/work_3-1.png" alt="" class="">
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 work__info">
+                        <h3 class="work__title">Документы</h3>
+                        <div class="work__desc">
+                            Наш агент вместе с юристом проверяет все имеющиеся 
+                            у Вас на руках документы по Вашей недвижимости. Готовит 
+                            недостающий пакет документов. Составляет договор 
+                            купли-продажи для последующей регистрации в Росреестре.
+                        </div>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 work__icon-1-2">
+                        <img src="img/work_3-2.png" alt="" class="">
+                    </div>
+                </div>
+                <div class="row work work--green">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 work__icon-1-1">
+                        <img src="img/work_4-1.png" alt="" class="work__img-4-1">
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 work__info">
+                        <h3 class="work__title work__title--center">сделка и оплата</h3>
+                        <div class="work__desc">
+                            Мы арендуем банковскую депозитарную ячейку для безопасности 
+                            проведения сделки. В банке проводится проверка и перерасчет 
+                            денежных  средств. Подписываем необходимые документы. Вы получаете 
+                            деньги удобным для Вас способом.  Мы остаемся c Вашей бывшей 
+                            недвижимостью.
+                        </div>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 work__icon-1-2">
+                        <img src="img/work_4-2.png" alt="" class="work__img-4-2">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mx-auto">
+                        <button class="btn__call" id="">
+                            Заказать звонок агента!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr nonshade>
+        <section class="answers">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 answers__title">
+                        Вопрос - ответ
+                    </div>
+                </div>
+                <div class="accordion answers__accordion" id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <a href="" class="answers-question__link">
+                                        <div class="answers__figure"></div>
+                                        <div class="answers-question__desc">                                                    
+                                            Как быстро я получу деньги за свою квартиру?
+                                        </div>
+                                    </a>
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="answer__question">
+                                    <b>Здравствуйте!</b> Мне очень срочно нужны деньги. 
+                                    Большая сумма. Я хотел бы быстро продать квартиру, 
+                                    которая досталась мне по наследству от бабушки. Скажите, 
+                                    сколько денег я могу реально быстро получить за неё? 
+                                    У меня двухкомнатная в Перово на улице Металлургов, 
+                                    45 метров в девятиэтажке, не первый этаж, состояние среднее
+                                </div>
+                                <div class="answer__answer">
+                                    <div class="answer__desc">
+                                        Мы готовы выкупить Вашу квартиру в течение двух дней, 
+                                        но её цена определяется только после просмотра. 
+                                        Как быстро он состоится, зависит только от Вас.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <a href="" class="answers-question__link">
+                                        <div class="answers__figure"></div>
+                                        <div class="answers-question__desc">                                                    
+                                            Выкупаете ли вы квартиры, находящиеся в залоге?
+                                        </div>
+                                    </a>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="answer__question">
+                                    <b>Добрый день!</b> У меня сложная ситуация: квартира, 
+                                    которую мне нужно срочно продать, находится в залоге у банка, 
+                                    и все покупатели из-за этого отказываются, не хотят лишних проблем. 
+                                    Выкупаете ли вы квартиры, находящиеся в залоге?
+                                </div>
+                                <div class="answer__answer">
+                                    <div class="answer__desc">
+                                        Да, мы покупаем такие квартиры. Технология покупки отработана чётко, 
+                                        проблемы нас не пугают, риски берём на себя. Так что, обращайтесь!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <a href="" class="answers-question__link">
+                                        <div class="answers__figure"></div>
+                                        <div class="answers-question__desc">                                                    
+                                            Нет времени заниматься квартирой самому. Вы могли бы мне помочь?
+                                        </div>
+                                    </a>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="answer__question">
+                                    <b>Доброе утро!</b> Я решила переехать жить в другой город, 
+                                    но не могу ждать, пока продастся моя квартира в Москве. 
+                                    И мне ещё нужно купить жильё на новом месте. Вы могли бы мне помочь?
+                                </div>
+                                <div class="answer__answer">
+                                    <div class="answer__desc">
+                                        С радостью поможем! Подберём Вам квартиру в другом городе 
+                                        и организуем сделку. Деньги от разницы получите сразу. В наличном 
+                                        виде или на счёт в банке, по Вашему выбору.
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <a href="" class="answers-question__link">
+                                        <div class="answers__figure"></div>
+                                        <div class="answers-question__desc">                                                    
+                                            Могли бы вы купить у меня комнату без просмотра?
+                                        </div>
+                                    </a>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="answer__question">
+                                    <b>Здравствуйте! </b> У меня сложная и давно наболевшая проблема. 
+                                    У меня есть комната в трёхкомнатной коммуналке, в которой 
+                                    я не могу жить, и даже не могу попасть в свою комнату из-за 
+                                    соседей. Могли бы вы купить у меня комнату без просмотра?
+                                </div>
+                                <div class="answer__answer">
+                                    <div class="answer__desc">
+                                        Да, ситуация непростая. Но мы готовы Вам помочь и выкупить 
+                                        Вашу комнату «не глядя». Благодаря большому опыту в решении 
+                                        сложных жилищных проблем мы успешно работаем и с такими вариантами. 
+                                        Ну, а Вы просто и быстро получите свои деньги! Проблема останется 
+                                        в прошлом!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <a href="" class="answers-question__link">
+                                        <div class="answers__figure"></div>
+                                        <div class="answers-question__desc">                                                    
+                                            Может ли ваша компания помочь с оформлением наследства и продажей?
+                                        </div>
+                                    </a>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="answer__question">
+                                    <b>Добрый вечер!</b> Мы с сестрой получили по наследству почти два гектара 
+                                    земли в хорошем месте в Пушкинском районе. Отец хотел там развернуть 
+                                    строительство, но не успел. Мы хотим всё это продать, но не разбираемся 
+                                    в наследственных делах и вообще во всех этих юридических тонкостях. 
+                                    Может ли ваша компания помочь с оформлением наследства и продажей? 
+                                    И желательно побыстрей?
+                                </div>
+                                <div class="answer__answer">
+                                    <div class="answer__desc">
+                                        Как сказал Марк Твен: «Покупайте землю, её больше не производят!». 
+                                        Да, мы выкупаем земельные участки в Московской области, как маленькие, 
+                                        так и большие. Если нужна помощь в оформлении наследства – нет проблем! 
+                                        Наши юристы возьмут на себя все хлопоты и Вам не придётся бегать по инстанциям. 
+                                        Получите деньги максимально быстро.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr nonshade>
+        <section class="reviews">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 answers__title">
+                        Отзывы довольных клиентов
+                    </div>
+                </div>
+                <div class="bd-example">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="review__desc">
+                                    Мне срочно нужны были деньги под залог квартиры – получил 
+                                    через два дня. Обещали продать квартиру за 6-6,3 миллиона – получил 6,2 млн. через 
+                                    полтора месяца. И по деньгам вопрос быстро решил, и квартиру продал по рынку. 
+                                    Максимально всё берут на себя. И показы, и справки, и переговоры с покупателем, и регистрацию, 
+                                    и всё остальное. Мне никуда бегать не пришлось. Комиссия агентства умеренная, не грабительская. 
+                                    Всё обоснованно: вознаграждение соответствует объему работы. Умеют работать с людьми. Слушать 
+                                    клиента умеют и понимать, что ему надо. Агент всегда был вежлив, корректен, спокоен – и со мной, 
+                                    и с контрагентами, и с покупателями. В общем, если мне снова потребуются риэлторские услуги, 
+                                    то буду обращаться в «Доминиум», проверенный путь – самый верный.
+                                </div>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <span class="review-author__desc">от</span>
+                                    <span class="review-author__desc review-author__desc--name">Петр Иванович</span>
+                                    <span class="review-author__desc">В Отставке</span>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="review__desc">
+                                    Выражаю благодарность руководителю агентства надвижимости «Квартал» Сергею Олеговичу и старшему 
+                                    специалисту Андрею Васильевичу за оперативное и чуткое отношение к клиентам. Отмечаю высокий 
+                                    профессионализм указанных сотрудников агентства и внимание к решению возникавших в процессе сделки 
+                                    вопросов. В итоге мы быстро продали нашу квартиру, полученную по наследству в Марьино, получили 
+                                    ту сумму, на которую рассчитывали, открыли бизнес.
+                                </div>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <span class="review-author__desc">от</span>
+                                    <span class="review-author__desc review-author__desc--name">Виктория и Вардан Сагателян</span>
+                                    <span class="review-author__desc">Предприниматели</span>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="review__desc">
+                                    Хочу выразить глубокую благодарность за проделанную работу Андрею Васильевичу. Это человек 
+                                    высокого профессионализма, внимательный к пожеланиям своих клиентов и учитывающий все нюансы. 
+                                    Сколько времени и сил было потрачено на нашу непростую сделку – просто не описать словами. 
+                                    Андрей Васильевич всегда был рядом: и на просмотрах, и на показах, и обсудить все детали по телефону, 
+                                    и просто поддержать. А главное результат, который полностью удовлетворил первоначальны запрос и оправдал 
+                                    все ожидания!
+                                </div>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <span class="review-author__desc">от</span>
+                                    <span class="review-author__desc review-author__desc--name">Алексеева Наталья</span>
+                                    <span class="review-author__desc">Домохозяйка</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr nonshade>
+        <section class="requests">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 requests__title">
+                        Вопрос - ответ
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 requests__subtitle">
+                        Свяжитесь, чтобы получить бесплатную консультацию
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 request__title">
+                        Оставьте заявку
+                    </div>
+                </div>
+                <div class="row mx-auto container__request">
+                    <div class="form-request__block">
+                        <input type="text" class="form-request__input" name="name" placeholder="Ваше Имя">
+                    </div>
+                    <div class="form-request__block">
+                        <input type="text" class="form-request__input" name="phone" placeholder="Ваш телефон">
+                    </div>
+                    <button class="btn__request-send" id="">
+                        Отправить
+                    </button>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 request__addition">
+                        Наш агент свяжется с Вами в течение 5 минут, чтобы оценить Вашу квартиру по телефону!
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 request-addition__title">
+                        Или позвоните нам:
+                    </div>
+                </div>
+                <div class="row request__phone">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <a href="+74951208200" class="request__number">+7 (495) 120-82-00</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 contacts__info">
+                        <div class="contacts__title">
+                            Агентство “Доминиум”
+                        </div>
+                        <div class="contacts__desc">
+                            Срочный выкуп недвижимости в Москве и 
+                            Подмосковье: квартир, комнат, нежилых 
+                            помещений, офисов, апартаментов, коммерческих 
+                            объектов, дач, участков, коттеджей.
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 contacts__info">
+                        <div class="contacts__title">
+                            Контакты
+                        </div>
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                <div class="contact__info">
+                                    <img src="img/navigation.png" alt="" class="contacts__icon">
+                                    <div class="contact__desc">
+                                        г. Москва, ул. Вавилова, д.69/75
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="contacts__item">
+                                <div class="contact__info">
+                                    <img src="img/tel.png" alt="" class="contacts__icon">
+                                    <div class="contact__desc">
+                                        <a href="+74951208200" class="contact__number">+7 (495) 120-82-00</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="contacts__item">
+                                <div class="contact__info">
+                                    <img src="img/mail.png" alt="" class="contacts__icon">
+                                    <div class="contact__desc">
+                                        info@dominium.ru
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer__title">
+                    © 2019 Агентство «Доминиум»
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 footer__info">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Политика конфиденциальности</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Пользовательское соглашение</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Контакты</a>
+                        </li>
+                    </ul>           
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,97 @@
+
+.header__row{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.logo__content{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 23px;  
+    font-family: 'Bebas';  
+    text-transform: uppercase;
+}
+
+.logo__dom{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: #282828;
+}
+
+.logo__stick{
+    font-family: 'Oswald', sans-serif;
+    color: #96db7c;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.logo__urgent{
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    color: #282828;
+}
+
+.logo__img{
+    height: 43px;
+    width: 43px;
+}
+
+.header__navigation{
+    display: flex;
+    align-items: center;
+}
+
+.navigation__title{
+    font-family: 'Oswald', sans-serif;
+    color: #1B2B54;
+    font-size: 18px;    
+    font-weight: lighter;
+    text-transform: uppercase;
+    filter: contrast(13.81);
+}
+
+.navigation__item{
+    padding-right: 36px;
+}
+
+.navigation__item:last-child{
+    padding-right: 0px;
+}
+
+.navigation__list{
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+
+.header__address{
+    display: flex;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.header__phone{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #96db7c;
+}
+
+.header__number{
+    color: #96db7c;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.address__logo{
+    margin-right: 15px;
+}
+
+.phone__logo{
+    margin-right: 12px;
+}

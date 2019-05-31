@@ -1,0 +1,72 @@
+.answers__title{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+    color: #000;
+    filter: contrast(19.77);    
+    margin: 0 0 20px;
+    margin-top: 40px;
+}
+
+.answers__question, .answers__desc{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    border: rgb(238, 236, 236) 0.5px solid;
+}
+
+.answers__desc{
+    padding: 20px 20px 40px 20px;
+}
+
+.answers__question{
+    padding: 14px 46px;
+}
+
+.answers-question__link{
+    color: #666666;
+    font-weight: bolder;
+    display: flex;
+}
+
+.answers__figure{
+    background: #666666;
+    height: 2px; 
+    width: 12px;
+    position: relative; 
+    left: 5px;
+    margin-left: -20px;
+    margin-top: 10px;
+
+}
+
+.answers__figure:before{        
+    content: "";
+    height: 12px; 
+    width: 2px;
+    background: #666666;
+    position: absolute; 
+    left: 5px; 
+    top: -5px;
+}
+.answers-question__desc{
+    padding-left: 20px;
+}
+
+.answer__desc{
+    font-style: italic;
+    border-left: 4px solid #95c566;
+    padding-left: 20px;
+    margin-left: 50px;
+}
+
+.answer__question{
+    margin-bottom: 35px;
+}
+
+.answers__accordion{
+    margin-bottom: 60px;
+}
