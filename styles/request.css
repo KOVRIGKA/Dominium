@@ -122,3 +122,13 @@
 .request__phone{
     margin-bottom: 50px;
 }
+
+.form-request__block-1{
+    margin-right: 40px;
+}
+
+@media (max-width:991px){
+    .form-request__block-1{
+        margin-right: 0px;
+    }
+}

@@ -1,7 +1,12 @@
 html, body{
     margin: 0;
-    height: 100%;
+    height: 100%;  
 }    
+
+body {
+    position: relative;
+}
+
 a{
     text-decoration: none;
 }
@@ -26,6 +31,26 @@ ul{
 hr{
     color: #949090;
     size: 2px;
-    width: 1000px;
+    width: 100%;
     opacity: 0.5;
+}
+
+.btn__scroll-up{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #1b2b54;
+    border-color: #1b2b54;
+    height: 40px;
+    width: 40px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-up__icon{
+    height: 13px;
+    width: 13px;
+
 }

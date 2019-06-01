@@ -8,7 +8,7 @@
     color: #000;
     filter: contrast(19.77);    
     margin: 0 0 40px;
-    margin-top: 40px;
+    margin-top: 80px;
 }
 
 .work{
@@ -44,6 +44,12 @@
     line-height: 24px;
 }
 
+@media (max-width:800px){
+    .work__icon{
+        display: none;
+    }
+}
+
 .work__icon-1-1{
     display: flex;
     justify-content: center;
@@ -66,6 +72,23 @@
 .work__img-4-2{
     height: 150px;
     width: 150px;
+}
+
+@media (max-width:800px){
+    .work__icon{
+        display: none;
+    }
+
+    .work{
+        width: 100%;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    .work__info{
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
 }
 
 .btn__call{
