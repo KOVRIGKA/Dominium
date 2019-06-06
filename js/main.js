@@ -1,6 +1,8 @@
-const backTopBtn = document.querySelector('.btn__scroll-up');
-const banner = document.querySelector('.banner');
-const header = document.querySelector('.header');
+var backTopBtn = document.querySelector('.btn__scroll-up');
+var banner = document.querySelector('.banner');
+var header = document.querySelector('.header');
+var btnQuestion = document.querySelector('.btn .btn-link');
+// var plus = document.addEventListener('anwer__figure-plus')
 
 backTopBtn.addEventListener("click", function() {
     topFunction();
@@ -25,3 +27,18 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+(function accordion($) {
+    $('.btn.btn-link').click(function onClick() {
+      var el = $(this);
+      $('.answers__figure').each(function(index) {
+        if (el.data('id') !== index) $(this).removeClass('after-invisible');
+      });
+      el.find('.answers__figure').toggleClass('after-invisible');
+    })
+})($);
+
+(function header($) {
+  $('.nav-item.nav-link').click(function onClick() {
+    $('.navbar-toggler').trigger('click');
+  })
+})($);

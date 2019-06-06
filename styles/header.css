@@ -40,7 +40,7 @@
 
 .logo__dom{
     font-family: 'Oswald', sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     color: #282828;
 }
 
@@ -62,9 +62,9 @@
 
 
 .logo__img{
-    height: 43px;
-    width: 43px;
-    margin-right: 8px;
+    /* height: 35.5px; */
+    width: 200px;
+    margin-right: 0px;
 
 }
 
@@ -139,7 +139,10 @@
 
 .header__number{
     color: #96db7c;
-    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    font-stretch: ultra-condensed;
 
 }
 

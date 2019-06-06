@@ -16,6 +16,11 @@
     padding-bottom: 30px;
 }
 
+.row.work{
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .work--green{
     background: #f1ffe8;
 }

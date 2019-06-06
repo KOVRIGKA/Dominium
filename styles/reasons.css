@@ -47,6 +47,8 @@ ul{
     border-radius: 50%;
     border: 6px solid #83d260;
     text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .reason__block-for-circle{
@@ -60,22 +62,23 @@ ul{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 18px; 
-	padding-top: 2px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .reason__desc{
     font-family: 'Menlo', sans-serif;
     font-weight: bold;
     filter: contrast(19.77);
-    font-size: 18px; 
+    font-size: 20px; 
     line-height: 28px;
 }
 
 .reasons__phone{
     display: flex;
     align-items: center;
-    width: 300px;
-    height: 65px;
+    width: 316px;
+    height: 83px;
     text-align: center;
     background: #243669;
     border: 10px solid #dbe1f2;
@@ -91,6 +94,7 @@ ul{
 
 .reasons-phone__number{    
     color: #fff;
+    font-weight: normal;
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
 }

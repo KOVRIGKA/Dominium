@@ -44,7 +44,11 @@
 
 }
 
-.answers__figure:before{        
+.after-invisible:after {
+    display: none;
+}
+
+.answers__figure:after{        
     content: "";
     height: 12px; 
     width: 2px;
