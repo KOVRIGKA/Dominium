@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="styles/request.css">
     <link rel="stylesheet" href="styles/contacts.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="img/icon.ico">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:300,400,500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,600&display=swap" rel="stylesheet">
@@ -267,7 +268,7 @@
                         <input type="email" class="form-value__input" name="mail" placeholder="Ваш e-mail">
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                        <input type="tel" class="form-value__input" name="phone" placeholder="Ваш телефон">
+                        <input type="tel" id="phone__value" class="form-value__input" name="phone" placeholder="Ваш телефон">
                     </div>
                 </div>
                 <div class="row">
@@ -794,7 +795,7 @@
                     </div>
                     <div class="form-request__block">
                         <label for="">
-                            <input type="tel" class="form-request__input" id="phone" name="phone" placeholder="Ваш телефон">
+                            <input type="tel" class="form-request__input" id="phone__request" name="phone" placeholder="Ваш телефон">
                         </label>
                     </div>
                     <button class="btn__request-send" id="">
