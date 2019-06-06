@@ -42,3 +42,4 @@ function topFunction() {
     $('.navbar-toggler').trigger('click');
   })
 })($);
+
