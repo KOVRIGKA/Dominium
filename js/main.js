@@ -50,8 +50,8 @@ function sendFirstOrder() {
 	  sendFirstForm.addEventListener('click', function (event) {
 		event.preventDefault();
 
-		let url = myForm.getAttribute('action');
-		let method = myForm.getAttribute('method');
+		let url = firstForm.getAttribute('action');
+		let method = firstForm.getAttribute('method');
 		let formData = new FormData(firstForm);
 
 		formData.append('name', firstForm.elements.name.value);
@@ -102,8 +102,8 @@ function sendThirdOrder() {
 	  sendThirdForm.addEventListener('click', function (event) {
 		event.preventDefault();
 
-		let url = myForm.getAttribute('action');
-		let method = myForm.getAttribute('method');
+		let url = thirdForm.getAttribute('action');
+		let method = thirdForm.getAttribute('method');
 		let formData = new FormData(thirdForm);
 
 		formData.append('name', thirdForm.elements.name.value);
