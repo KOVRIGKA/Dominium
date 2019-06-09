@@ -2,8 +2,8 @@
     display: flex;
     background-color: #00335a;
     width: 100%;
-    padding-top: 70px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 25px;
 }
 
 .footer__title, .footer__link{
@@ -21,25 +21,25 @@
 }
 
 .footer__list{
-    margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    /* text-align: center; */
 }
 
 .footer__info{
     display: flex;
     justify-content: space-around;
     text-align: center;
-    width: 470px;
 
 }
 
 .footer__item{
     margin-right: 10px;
+    margin-left: 10px;
 }
 
-@media (max-width:760px){
+@media (max-width:990px){
     .footer__list{
         flex-direction: column;
         justify-content: center;

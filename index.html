@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="styles/request.css">
     <link rel="stylesheet" href="styles/contacts.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="css/jquery.arcticmodal.css">
+    <link rel="stylesheet" href="css/jquery.jgrowl.css">
     <link rel="icon" type="image/vnd.microsoft.icon" href="img/icon.ico">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:300,400,500" rel="stylesheet">
@@ -107,7 +109,7 @@
                         <div class="banner-order__title">
                             Заказать бесплатную <br> оценку квартиры
                         </div>
-                        <form action="" class="form">
+                        <form action="" class="form" id="firstForm" method="POST">
                             <label for="" class="form__block">
                                 <input type="text" class="form__input" name="name" placeholder="Ваше Имя">
                             </label>
@@ -115,7 +117,7 @@
                                 <input type="tel" id="phone" class="form__input" name="phone" placeholder="Ваш телефон">
                             </label>
                             <div class="form__request">
-                                <button class="btn__request" id="">
+                                <button class="btn__request" id="sendFirstForm">
                                     <div class="btn-request__info">
                                         Оставить заявку
                                         <img src="img/plane.png" alt="" class="btn__plane">
@@ -188,96 +190,98 @@
         <hr nonshade>
         <section class="value" id="value">
             <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 value__title">
-                        Получить оценку квартиры онлайн
+                <form action="">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 value__title">
+                            Получить оценку квартиры онлайн
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 value__subtitle">
-                        Заполните форму ниже, и наш агент свяжется с Вами в течение 5 минут , чтобы предоставить оценку
-                        стоимости квартиры.
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 value__subtitle">
+                            Заполните форму ниже, и наш агент свяжется с Вами в течение 5 минут , чтобы предоставить оценку
+                            стоимости квартиры.
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 form__value">
-                        <select class="form-value__select" name="" id="" required>
-                            <option value="" disabled selected>
-                                Тип жилья
-                            </option>
-                            <option value="" class="value__option">
-                                Вторичное жилье
-                            </option>
-                            <option value="" class="value__option">
-                                Новостройки
-                            </option>
-                            <option value="" class="value__option">
-                                Загородный дом
-                            </option>
-                        </select>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 form__value">
+                            <select class="form-value__select" name="" id="" required>
+                                <option value="" disabled selected>
+                                    Тип жилья
+                                </option>
+                                <option value="" class="value__option">
+                                    Вторичное жилье
+                                </option>
+                                <option value="" class="value__option">
+                                    Новостройки
+                                </option>
+                                <option value="" class="value__option">
+                                    Загородный дом
+                                </option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                            <select class="form-value__select" name="" id="" required>
+                                <option value="" disabled selected>
+                                    Количество комнат
+                                </option>
+                                <option value="" class="value__option">
+                                    Свободная планировка
+                                </option>
+                                <option value="" class="value__option">
+                                    1
+                                </option>
+                                <option value="" class="value__option">
+                                    2
+                                </option>
+                                <option value="" class="value__option">
+                                    3
+                                </option>
+                                <option value="" class="value__option">
+                                    4
+                                </option>
+                                <option value="" class="value__option">
+                                    5
+                                </option>
+                                <option value="" class="value__option">
+                                    6
+                                </option>
+                                <option value="" class="value__option">
+                                    7+
+                                </option>
+                                <option value="" class="value__option">
+                                    Другое
+                                </option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                            <input type="text" class="form-value__input" name="metro" placeholder="Станция метро">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                            <input type="text" class="form-value__input" name="floor-number" placeholder="Этажность">
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                        <select class="form-value__select" name="" id="" required>
-                            <option value="" disabled selected>
-                                Количество комнат
-                            </option>
-                            <option value="" class="value__option">
-                                Свободная планировка
-                            </option>
-                            <option value="" class="value__option">
-                                1
-                            </option>
-                            <option value="" class="value__option">
-                                2
-                            </option>
-                            <option value="" class="value__option">
-                                3
-                            </option>
-                            <option value="" class="value__option">
-                                4
-                            </option>
-                            <option value="" class="value__option">
-                                5
-                            </option>
-                            <option value="" class="value__option">
-                                6
-                            </option>
-                            <option value="" class="value__option">
-                                7+
-                            </option>
-                            <option value="" class="value__option">
-                                Другое
-                            </option>
-                        </select>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                            <input type="text" class="form-value__input" name="floor" placeholder="Этаж">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                            <input type="text" class="form-value__input" name="name" placeholder="Ваше Имя">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                            <input type="email" class="form-value__input" name="mail" placeholder="Ваш e-mail">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                            <input type="tel" id="phone__value" class="form-value__input" name="phone" placeholder="Ваш телефон">
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                        <input type="text" class="form-value__input" name="metro" placeholder="Станция метро">
+                    <div class="row">
+                        <div class="mx-auto">
+                            <button class="btn__send" id="">
+                                Отправить
+                            </button>
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                        <input type="text" class="form-value__input" name="floor-number" placeholder="Этажность">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                        <input type="text" class="form-value__input" name="floor" placeholder="Этаж">
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                        <input type="text" class="form-value__input" name="name" placeholder="Ваше Имя">
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                        <input type="email" class="form-value__input" name="mail" placeholder="Ваш e-mail">
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                        <input type="tel" id="phone__value" class="form-value__input" name="phone" placeholder="Ваш телефон">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="mx-auto">
-                        <button class="btn__send" id="">
-                            Отправить
-                        </button>
-                    </div>
-                </div>
+                </form>
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 value__title">
                         Или позвоните нам, и мы оценим Вашу квартиру по телефону
@@ -789,19 +793,21 @@
                         Оставьте заявку
                     </div>
                 </div>
-                <div class="row mx-auto container__request">
-                    <div class="form-request__block form-request__block-1">
-                        <input type="text" class="form-request__input" name="name" placeholder="Ваше Имя">
+                <form action="">
+                    <div class="row mx-auto container__request">
+                        <div class="form-request__block form-request__block-1">
+                            <input type="text" class="form-request__input" name="name" placeholder="Ваше Имя">
+                        </div>
+                        <div class="form-request__block">
+                            <label for="">
+                                <input type="tel" class="form-request__input" id="phone__request" name="phone" placeholder="Ваш телефон">
+                            </label>
+                        </div>
+                        <button class="btn__request-send" id="">
+                            Отправить
+                        </button>
                     </div>
-                    <div class="form-request__block">
-                        <label for="">
-                            <input type="tel" class="form-request__input" id="phone__request" name="phone" placeholder="Ваш телефон">
-                        </label>
-                    </div>
-                    <button class="btn__request-send" id="">
-                        Отправить
-                    </button>
-                </div>
+                </form>
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 request__addition">
                         Наш агент свяжется с Вами в течение 5 минут, чтобы оценить Вашу квартиру по телефону!
@@ -872,10 +878,10 @@
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer__title">
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 footer__title">
                         © 2019 Агентство «Доминиум»
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 footer__info">
+                    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 footer__info">
                         <ul class="footer__list">
                             <li class="footer__item">
                                 <a href="" class="footer__link">Политика конфиденциальности</a>
@@ -894,6 +900,8 @@
         <div class="btn__scroll-up">
             <img src="img/arrow-up.png" alt="" class="arrow-up__icon">
         </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
