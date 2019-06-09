@@ -43,7 +43,7 @@ function topFunction() {
   })
 })($);
 
-function sendOrder() {
+function sendFirstOrder() {
 	const firstForm = document.querySelector('#firstForm');
     const sendFirstForm = document.querySelector('#sendFirstForm');
 
@@ -54,25 +54,66 @@ function sendOrder() {
 		let method = myForm.getAttribute('method');
 		let formData = new FormData(firstForm);
 
-		formData.append('name', myForm.elements.name.value);
-		formData.append('phone', myForm.elements.phone.value);
+		formData.append('name', firstForm.elements.name.value);
+		formData.append('phone', firstForm.elements.phone.value);
 		formData.append('to', 'info@dominium.ru');
 
 		const xhr = new XMLHttpRequest();
 		xhr.responseType = 'json';
 		xhr.open(method, url);
 		xhr.send(formData);
-
-		// const overlay = createOverlay(document.querySelector('#overlayTemplate').innerHTML);
-		// xhr.addEventListener('load', () => {
-		// 	overlay.open();
-		// 	if (xhr.status === 200) {
-		// 		const message = xhr.response.message;
-		// 		overlay.setContent('', message);
-		// 	} else {
-		// 		const message = 'УПС! Ошибочка! Попробуйте снова!';
-		// 		overlay.setContent('', message);
-		// 	}
-		// });
 	});
 };
+sendFirstOrder();
+
+function sendSecondOrder() {
+	const secondForm = document.querySelector('#secondForm');
+    const sendSecondForm = document.querySelector('#sendSecondForm');
+
+	  sendSecondForm.addEventListener('click', function (event) {
+		event.preventDefault();
+
+		let url = secondForm.getAttribute('action');
+		let method = secondForm.getAttribute('method');
+		let formData = new FormData(secondForm);
+    
+    formData.append('housingType', secondForm.elements.housingType.value);
+    formData.append('roomNumber', secondForm.elements.roomNumder.value);
+		formData.append('metro', secondForm.elements.metro.value);
+    formData.append('floorNumber', secondForm.elements.floorNumber.value);
+		formData.append('floor', secondForm.elements.floor.value);
+		formData.append('name', secondForm.elements.name.value);
+		formData.append('mail', secondForm.elements.mail.value);
+		formData.append('phone', secondForm.elements.phone.value);    
+		formData.append('to', 'info@dominium.ru');
+
+		const xhr = new XMLHttpRequest();
+		xhr.responseType = 'json';
+		xhr.open(method, url);
+		xhr.send(formData);
+	});
+};
+sendSecondOrder();
+
+function sendThirdOrder() {
+	const thirdForm = document.querySelector('#thirdForm');
+    const sendThirdForm = document.querySelector('#sendthirdForm');
+
+	  sendThirdForm.addEventListener('click', function (event) {
+		event.preventDefault();
+
+		let url = myForm.getAttribute('action');
+		let method = myForm.getAttribute('method');
+		let formData = new FormData(thirdForm);
+
+		formData.append('name', thirdForm.elements.name.value);
+		formData.append('phone', thirdForm.elements.phone.value);
+		formData.append('to', 'info@dominium.ru');
+
+		const xhr = new XMLHttpRequest();
+		xhr.responseType = 'json';
+		xhr.open(method, url);
+		xhr.send(formData);
+	});
+};
+sendThirdOrder();

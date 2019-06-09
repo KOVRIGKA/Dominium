@@ -190,65 +190,65 @@
         <hr nonshade>
         <section class="value" id="value">
             <div class="container">
-                <form action="">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 value__title">
-                            Получить оценку квартиры онлайн
-                        </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 value__title">
+                        Получить оценку квартиры онлайн
                     </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 value__subtitle">
-                            Заполните форму ниже, и наш агент свяжется с Вами в течение 5 минут , чтобы предоставить оценку
-                            стоимости квартиры.
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 value__subtitle">
+                        Заполните форму ниже, и наш агент свяжется с Вами в течение 5 минут , чтобы предоставить оценку
+                        стоимости квартиры.
                     </div>
+                </div>
+                <form action="" id="secondForm" method="POST">
                     <div class="row">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 form__value">
-                            <select class="form-value__select" name="" id="" required>
+                            <select class="form-value__select" name="housingType" id="" required>
                                 <option value="" disabled selected>
                                     Тип жилья
                                 </option>
-                                <option value="" class="value__option">
+                                <option value="secondaryHousing" class="value__option">
                                     Вторичное жилье
                                 </option>
-                                <option value="" class="value__option">
+                                <option value="newBuildings" class="value__option">
                                     Новостройки
                                 </option>
-                                <option value="" class="value__option">
+                                <option value="cottage" class="value__option">
                                     Загородный дом
                                 </option>
                             </select>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                            <select class="form-value__select" name="" id="" required>
+                            <select class="form-value__select" name="roomNumber" id="" required>
                                 <option value="" disabled selected>
                                     Количество комнат
                                 </option>
-                                <option value="" class="value__option">
+                                <option value="freePlan" class="value__option">
                                     Свободная планировка
                                 </option>
-                                <option value="" class="value__option">
+                                <option value="1Room" class="value__option">
                                     1
                                 </option>
-                                <option value="" class="value__option">
+                                <option value="2Rooms" class="value__option">
                                     2
                                 </option>
-                                <option value="" class="value__option">
+                                <option value="3Rooms" class="value__option">
                                     3
                                 </option>
-                                <option value="" class="value__option">
+                                <option value="4Rooms" class="value__option">
                                     4
                                 </option>
-                                <option value="" class="value__option">
+                                <option value="5Rooms" class="value__option">
                                     5
                                 </option>
-                                <option value="" class="value__option">
+                                <option value="6Rooms" class="value__option">
                                     6
                                 </option>
-                                <option value="" class="value__option">
+                                <option value="7Rooms" class="value__option">
                                     7+
                                 </option>
-                                <option value="" class="value__option">
+                                <option value="other" class="value__option">
                                     Другое
                                 </option>
                             </select>
@@ -257,7 +257,7 @@
                             <input type="text" class="form-value__input" name="metro" placeholder="Станция метро">
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                            <input type="text" class="form-value__input" name="floor-number" placeholder="Этажность">
+                            <input type="text" class="form-value__input" name="floorNumber" placeholder="Этажность">
                         </div>
                     </div>
                     <div class="row">
@@ -276,7 +276,7 @@
                     </div>
                     <div class="row">
                         <div class="mx-auto">
-                            <button class="btn__send" id="">
+                            <button class="btn__send" id="sendSecondForm">
                                 Отправить
                             </button>
                         </div>
@@ -793,7 +793,7 @@
                         Оставьте заявку
                     </div>
                 </div>
-                <form action="">
+                <form action="" id="thirdForm" method="POST">
                     <div class="row mx-auto container__request">
                         <div class="form-request__block form-request__block-1">
                             <input type="text" class="form-request__input" name="name" placeholder="Ваше Имя">
@@ -803,7 +803,7 @@
                                 <input type="tel" class="form-request__input" id="phone__request" name="phone" placeholder="Ваш телефон">
                             </label>
                         </div>
-                        <button class="btn__request-send" id="">
+                        <button class="btn__request-send" id="sendThirdForm">
                             Отправить
                         </button>
                     </div>
