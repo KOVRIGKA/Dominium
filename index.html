@@ -110,12 +110,18 @@
                             Заказать бесплатную <br> оценку квартиры
                         </div>
                         <form action="" class="form" id="firstForm" method="POST">
-                            <label for="" class="form__block">
-                                <input type="text" class="form__input" name="name" placeholder="Ваше Имя">
-                            </label>
-                            <label for="" class="form__block">
-                                <input type="tel" id="phone" class="form__input" name="phone" placeholder="Ваш телефон">
-                            </label>
+                            <div class="field">
+                                <label for="" class="form__block">
+                                    <input type="text" class="form__input" name="name" placeholder="Ваше Имя" required>
+                                    <div class="error"></div>
+                                </label>
+                            </div>
+                            <div class="field">
+                                <label for="" class="form__block">
+                                    <input type="tel" id="phone" class="form__input" name="phone" placeholder="Ваш телефон" required>
+                                    <div class="error"></div>
+                                </label>
+                            </div>
                             <div class="form__request">
                                 <button class="btn__request" id="sendFirstForm">
                                     <div class="btn-request__info">
@@ -218,8 +224,9 @@
                                     Загородный дом
                                 </option>
                             </select>
+                            <div class="value__error"></div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 form__value">
                             <select class="form-value__select" name="roomNumber" id="" required>
                                 <option value="" disabled selected>
                                     Количество комнат
@@ -252,26 +259,33 @@
                                     Другое
                                 </option>
                             </select>
+                            <div class="value__error"></div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 form__value">
                             <input type="text" class="form-value__input" name="metro" placeholder="Станция метро">
+                            <div class="value__error"></div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 form__value">
                             <input type="text" class="form-value__input" name="floorNumber" placeholder="Этажность">
+                            <div class="value__error"></div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 form__value">
                             <input type="text" class="form-value__input" name="floor" placeholder="Этаж">
+                            <div class="value__error"></div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 form__value">
                             <input type="text" class="form-value__input" name="name" placeholder="Ваше Имя">
+                            <div class="value__error"></div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 form__value">
                             <input type="email" class="form-value__input" name="mail" placeholder="Ваш e-mail">
+                            <div class="value__error"></div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 form__value">
                             <input type="tel" id="phone__value" class="form-value__input" name="phone" placeholder="Ваш телефон">
+                            <div class="value__error"></div>
                         </div>
                     </div>
                     <div class="row">

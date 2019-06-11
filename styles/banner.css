@@ -85,17 +85,27 @@
 }
 
 .form__block{
-    display: flex;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+.field{
+    width: 100%;
+}
+.error{
+    color: red;
+    position: absolute;
 }
 
+
 .form__input{
+    width: 100%;
     padding: 6px 15px;
     border-radius: 3px;
     border: 1px solid;
     border-color: lightgrey;
     flex: 1;
     height: 44px;
-    margin-bottom: 20px;
     font-size: 15px;
 }
 
