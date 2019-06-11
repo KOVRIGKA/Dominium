@@ -173,11 +173,12 @@ sendSecondOrder();
 
 function sendThirdOrder() {
 	const thirdForm = document.querySelector('#thirdForm');
-    const sendThirdForm = document.querySelector('#sendthirdForm');
+    const sendThirdForm = document.querySelector('#sendThirdForm');
 
 	  sendThirdForm.addEventListener('click', function (event) {
 		event.preventDefault();
 
+		if (validateThirdForm(firstForm)){
 		let url = thirdForm.getAttribute('action');
 		let method = thirdForm.getAttribute('method');
 		let formData = new FormData(thirdForm);
@@ -190,6 +191,31 @@ function sendThirdOrder() {
 		xhr.responseType = 'json';
 		xhr.open(method, url);
 		xhr.send(formData);
+		}
+		
+		function validateThirdForm(form){
+			let valid = true;
+
+			if(!validateThirdField(form.elements.name)){
+				valid = false;
+			}
+
+			if(!validateThirdField(form.elements.phone)){
+				valid = false;
+			}
+
+			return valid;
+		}
+
+		function validateThirdField(field){
+			if (!field.checkValidity()){
+				field.nextElementSibling.textContent = field.validationMessage;
+				return false;
+			} else {
+				field.nextElementSibling.textContent = '';
+				return true;
+			}
+		}
 	});
 };
 sendThirdOrder();
