@@ -105,7 +105,7 @@ function sendSecondOrder() {
 			let formData = new FormData(secondForm);
 		
 			formData.append('housingType', secondForm.elements.housingType.value);
-			formData.append('roomNumber', secondForm.elements.roomNumder.value);
+			formData.append('roomNumber', secondForm.elements.roomNumber.value);
 			formData.append('metro', secondForm.elements.metro.value);
 			formData.append('floorNumber', secondForm.elements.floorNumber.value);
 			formData.append('floor', secondForm.elements.floor.value);
@@ -127,7 +127,7 @@ function sendSecondOrder() {
 				valid = false;
 			}
 
-			if(!validateField(form.elements.roomNumder)){
+			if(!validateField(form.elements.roomNumber)){
 				valid = false;
 			}
 
@@ -178,7 +178,7 @@ function sendThirdOrder() {
 	  sendThirdForm.addEventListener('click', function (event) {
 		event.preventDefault();
 
-		if (validateThirdForm(firstForm)){
+		if (validateThirdForm(thirdForm)){
 		let url = thirdForm.getAttribute('action');
 		let method = thirdForm.getAttribute('method');
 		let formData = new FormData(thirdForm);
