@@ -132,3 +132,7 @@
         margin-right: 0px;
     }
 }
+
+.request__error{
+    color: red;
+}
