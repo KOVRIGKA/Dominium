@@ -59,10 +59,11 @@ function sendFirstOrder() {
 			formData.append('phone', firstForm.elements.phone.value);
 			formData.append('to', 'info@dominium.ru');
 	
-			const xhr = new XMLHttpRequest();
-			xhr.responseType = 'json';
-			xhr.open(method, url);
-			xhr.send(formData);
+			var form = document.querySelector('form');
+			var data = new FormData(form);
+			var req = new XMLHttpRequest();
+			req.open(form.method, form.action);
+			req.send(data);
 		}
 		
 		function validateForm(form){
@@ -110,14 +111,15 @@ function sendSecondOrder() {
 			formData.append('floorNumber', secondForm.elements.floorNumber.value);
 			formData.append('floor', secondForm.elements.floor.value);
 			formData.append('name', secondForm.elements.name.value);
-			formData.append('mail', secondForm.elements.mail.value);
+			formData.append('mail', secondForm.elements._replyto.value);
 			formData.append('phone', secondForm.elements.phone.value);    
 			formData.append('to', 'info@dominium.ru');
 	
-			const xhr = new XMLHttpRequest();
-			xhr.responseType = 'json';
-			xhr.open(method, url);
-			xhr.send(formData);
+			var form = document.querySelector('form');
+			var data = new FormData(form);
+			var req = new XMLHttpRequest();
+			req.open(form.method, form.action);
+			req.send(data);
 		}
 
 		function validateForm(form){
@@ -147,7 +149,7 @@ function sendSecondOrder() {
 				valid = false;
 			}
 
-			if(!validateField(form.elements.mail)){
+			if(!validateField(form.elements._replyto)){
 				valid = false;
 			}
 
@@ -187,10 +189,11 @@ function sendThirdOrder() {
 		formData.append('phone', thirdForm.elements.phone.value);
 		formData.append('to', 'info@dominium.ru');
 
-		const xhr = new XMLHttpRequest();
-		xhr.responseType = 'json';
-		xhr.open(method, url);
-		xhr.send(formData);
+		var form = document.querySelector('form');
+		var data = new FormData(form);
+		var req = new XMLHttpRequest();
+		req.open(form.method, form.action);
+		req.send(data);
 		}
 		
 		function validateThirdForm(form){

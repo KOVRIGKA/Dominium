@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="description"  content="Срочный выкуп квартир. До 90% от рыночной цены, аванс до 100% стоимости в день обращения. Выкупаем за собственные средства." />
+    <title>Срочный выкуп квартир и комнат | Доминиум</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/header.css">
@@ -95,9 +96,9 @@
             <div class="container">
                 <div class="row banner__row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 banner__desc">
-                        <div class="banner-desc__title">
+                        <h1 class="banner-desc__title">
                             Срочный выкуп жилья в <br> Москве и Московской области
-                        </div>
+                        </h1>
                         <ul class="banner-desc__list">
                             <li class="banner-desc__item">Выкупаем дорого за один день</li>
                             <li class="banner-desc__item">Выкупаем за собственные средства</li>
@@ -109,7 +110,7 @@
                         <div class="banner-order__title">
                             Заказать бесплатную <br> оценку квартиры
                         </div>
-                        <form action="" class="form" id="firstForm" method="POST">
+                        <form action="https://formspree.io/xoyqpkyx" class="form" id="firstForm" method="POST">
                             <div class="field">
                                 <label for="" class="form__block">
                                     <input type="text" class="form__input" name="name" placeholder="Ваше Имя" required>
@@ -123,10 +124,10 @@
                                 </label>
                             </div>
                             <div class="form__request">
-                                <button class="btn__request" id="sendFirstForm">
+                                <button type="submit" class="btn__request" id="sendFirstForm">
                                     <div class="btn-request__info">
                                         Оставить заявку
-                                        <img src="img/plane.png" alt="" class="btn__plane">
+                                        <img src="img/plane1.png" alt="" class="btn__plane">
                                     </div>
                                 </button>
                             </div>
@@ -207,7 +208,7 @@
                         стоимости квартиры.
                     </div>
                 </div>
-                <form action="" id="secondForm" method="POST">
+                <form action="https://formspree.io/xoyqpkyx" id="secondForm" method="POST">
                     <div class="row">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 form__value">
                             <select class="form-value__select" name="housingType" id="" required>
@@ -280,7 +281,7 @@
                             <div class="value__error"></div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 form__value">
-                            <input type="email" class="form-value__input" name="mail" placeholder="Ваш e-mail" required>
+                            <input type="email" class="form-value__input" name="_replyto" placeholder="Ваш e-mail" required>
                             <div class="value__error"></div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 form__value">
@@ -290,7 +291,7 @@
                     </div>
                     <div class="row">
                         <div class="mx-auto">
-                            <button class="btn__send" id="sendSecondForm">
+                            <button type="submit" class="btn__send" id="sendSecondForm">
                                 Отправить
                             </button>
                         </div>
@@ -807,7 +808,7 @@
                         Оставьте заявку
                     </div>
                 </div>
-                <form action="" id="thirdForm" method="POST">
+                <form action="https://formspree.io/xoyqpkyx" id="thirdForm" method="POST">
                     <div class="row mx-auto container__request">
                         <div class="form-request__block form-request__block-1">
                             <input type="text" class="form-request__input" name="name" placeholder="Ваше Имя" required>
@@ -817,7 +818,7 @@
                             <input type="tel" class="form-request__input" id="phone__request" name="phone" placeholder="Ваш телефон" required>
                             <div class="request__error"></div>
                         </div>
-                        <button class="btn__request-send" id="sendThirdForm">
+                        <button type="submit" class="btn__request-send" id="sendThirdForm">
                             Отправить
                         </button>
                     </div>
