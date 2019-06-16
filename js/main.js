@@ -59,7 +59,7 @@ function sendFirstOrder() {
 			formData.append('phone', firstForm.elements.phone.value);
 			formData.append('to', 'info@dominium.ru');
 	
-			var form = document.querySelector('form');
+			var form = document.querySelector('#firstForm');
 			var data = new FormData(form);
 			var req = new XMLHttpRequest();
 			req.open(form.method, form.action);
@@ -115,7 +115,7 @@ function sendSecondOrder() {
 			formData.append('phone', secondForm.elements.phone.value);    
 			formData.append('to', 'info@dominium.ru');
 	
-			var form = document.querySelector('form');
+			var form = document.querySelector('#secondForm');
 			var data = new FormData(form);
 			var req = new XMLHttpRequest();
 			req.open(form.method, form.action);
@@ -189,7 +189,7 @@ function sendThirdOrder() {
 		formData.append('phone', thirdForm.elements.phone.value);
 		formData.append('to', 'info@dominium.ru');
 
-		var form = document.querySelector('form');
+		var form = document.querySelector('#thirdForm');
 		var data = new FormData(form);
 		var req = new XMLHttpRequest();
 		req.open(form.method, form.action);
