@@ -243,3 +243,15 @@ function sendThirdOrder() {
 	});
 };
 sendThirdOrder();
+
+function onSubmit(token) {
+	document.getElementById("firstForm").submit();
+}
+
+function onSubmit(token) {
+	document.getElementById("secondForm").submit();
+}
+
+function onSubmit(token) {
+	document.getElementById("thirdForm").submit();
+}

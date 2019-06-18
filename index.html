@@ -124,7 +124,7 @@
                                 </label>
                             </div>
                             <div class="form__request">
-                                <button type="submit" class="btn__request" id="sendFirstForm">
+                                <button type="submit" class="btn__request g-recaptcha" id="sendFirstForm" data-sitekey="your_site_key" data-callback='onSubmit'>
                                     <div class="btn-request__info">
                                         Оставить заявку
                                         <img src="img/plane1.png" alt="" class="btn__plane">
@@ -294,7 +294,7 @@
                     </div>
                     <div class="row">
                         <div class="mx-auto">
-                            <button type="submit" class="btn__send" id="sendSecondForm">
+                            <button type="submit" class="btn__send g-recaptcha" id="sendSecondForm" data-sitekey="your_site_key" data-callback='onSubmit'>
                                 Отправить
                             </button>
                         </div>
@@ -826,7 +826,7 @@
                             <input type="tel" class="form-request__input" id="phone__request" name="phone" placeholder="Ваш телефон" required>
                             <div class="request__error"></div>
                         </div>
-                        <button type="submit" class="btn__request-send" id="sendThirdForm">
+                        <button type="submit" class="btn__request-send g-recaptcha" id="sendThirdForm" data-sitekey="your_site_key" data-callback='onSubmit'>
                             Отправить
                         </button>
                     </div>
@@ -929,7 +929,7 @@
             <img src="img/arrow-up.png" alt="" class="arrow-up__icon">
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
