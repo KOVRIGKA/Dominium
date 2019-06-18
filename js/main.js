@@ -62,8 +62,15 @@ function sendFirstOrder() {
 			var form = document.querySelector('#firstForm');
 			var data = new FormData(form);
 			var req = new XMLHttpRequest();
+			var thanks = document.querySelector('.banner__thanks');
 			req.open(form.method, form.action);
 			req.send(data);
+			$(thanks).addClass('banner__thanks-after-click');
+			$(sendFirstForm).attr('disabled', true);
+			setTimeout(() => {
+				$(thanks).removeClass('banner__thanks-after-click');
+				$(sendFirstForm).attr('disabled', false);
+			}, 20000);
 		}
 		
 		function validateForm(form){
@@ -118,8 +125,15 @@ function sendSecondOrder() {
 			var form = document.querySelector('#secondForm');
 			var data = new FormData(form);
 			var req = new XMLHttpRequest();
+			var thanks = document.querySelector('.value__thanks');
 			req.open(form.method, form.action);
 			req.send(data);
+			$(thanks).addClass('value__thanks-after-click');
+			$(sendSecondForm).attr('disabled', true);
+			setTimeout(() => {
+				$(thanks).removeClass('value__thanks-after-click');
+				$(sendSecondForm).attr('disabled', false);
+			}, 20000);
 		}
 
 		function validateForm(form){
@@ -192,8 +206,15 @@ function sendThirdOrder() {
 		var form = document.querySelector('#thirdForm');
 		var data = new FormData(form);
 		var req = new XMLHttpRequest();
+		var thanks = document.querySelector('.request__thanks');
 		req.open(form.method, form.action);
 		req.send(data);
+		$(thanks).addClass('request__thanks-after-click');
+		$(sendThirdForm).attr('disabled', true);
+		setTimeout(() => {
+				$(thanks).removeClass('request__thanks-after-click');
+				$(sendTirdForm).attr('disabled', false);
+			}, 20000);
 		}
 		
 		function validateThirdForm(form){
