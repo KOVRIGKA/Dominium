@@ -2,7 +2,8 @@
     display: flex;
     align-items: center;
 	text-align: center;
-	width: 100%;
+    width: 100%;
+    min-height: 80px;
     background-color: #0F3161;
     margin-right: 0;
     margin-left: 0;
@@ -101,4 +102,43 @@ ul{
 
 .reasons-phone__icon{
     margin-right: 10px;
+}
+
+.warning{
+    background: #83d260;
+    height: 20px;
+    width: 94px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: white;
+    display: block;
+    align-items: center;
+    position: relative;
+    -moz-transform: rotate(15deg); /* Для Firefox */
+    -ms-transform: rotate(15deg); /* Для IE */
+    -webkit-transform: rotate(15deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(15deg); /* Для Opera */
+    transform: rotate(45deg);
+}
+
+.warning::before{
+    content: ''; 
+    position: absolute;
+    right: 93px; 
+    top: 0px;
+    border: 10px solid transparent;
+    border-right: 10px solid #83d260; 
+    border-bottom: 10px solid #83d260;
+}
+
+.warning::after{
+    content: ''; 
+    position: absolute;
+    right: -19px; 
+    top: 0px;
+    border: 10px solid transparent;	
+    border-left: 10px solid #83d260; 
+    border-top: 10px solid #83d260;
 }
