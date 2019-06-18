@@ -65,6 +65,7 @@ function sendFirstOrder() {
 			var thanks = document.querySelector('.banner__thanks');
 			req.open(form.method, form.action);
 			req.send(data);
+			document.getElementById('firstForm').reset();
 			$(thanks).addClass('banner__thanks-after-click');
 			$(sendFirstForm).attr('disabled', true);
 			setTimeout(() => {
@@ -128,6 +129,7 @@ function sendSecondOrder() {
 			var thanks = document.querySelector('.value__thanks');
 			req.open(form.method, form.action);
 			req.send(data);
+			document.getElementById('secondForm').reset();
 			$(thanks).addClass('value__thanks-after-click');
 			$(sendSecondForm).attr('disabled', true);
 			setTimeout(() => {
@@ -209,6 +211,7 @@ function sendThirdOrder() {
 		var thanks = document.querySelector('.request__thanks');
 		req.open(form.method, form.action);
 		req.send(data);
+		document.getElementById('thirdForm').reset();
 		$(thanks).addClass('request__thanks-after-click');
 		$(sendThirdForm).attr('disabled', true);
 		setTimeout(() => {
