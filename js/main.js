@@ -67,10 +67,10 @@ function sendFirstOrder() {
 			req.send(data);
 			document.getElementById('firstForm').reset();
 			$(thanks).addClass('banner__thanks-after-click');
-			$(sendFirstForm).attr('disabled', true);
+			$(sendFirstForm).prop('disabled', true);
 			setTimeout(() => {
 				$(thanks).removeClass('banner__thanks-after-click');
-				$(sendFirstForm).attr('disabled', false);
+				$(sendFirstForm).prop('disabled', false);
 			}, 20000);
 		}
 		
